@@ -27,7 +27,7 @@ Etkinlik öncesi menünün ve fiyatların sisteme tanıtıldığı operasyon mer
 * Net, 2px kenarlıklı giriş alanları sayesinde kullanıcı odak noktasını (focus) asla kaybetmez.
 <br>
 
-> ![Kurulum Ekranı](./screen2.png)
+> ![Kurulum Ekranı](stitch_kermes_kasa_accessible_pos/setup_screen/screen2.png)
 
 ---
 
