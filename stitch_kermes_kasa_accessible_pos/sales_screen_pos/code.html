@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1c1b1b",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "surface-tint": "#3a5f94",
+                    "on-primary-fixed-variant": "#1f477b",
+                    "outline-variant": "#c3c6d1",
+                    "outline": "#737780",
+                    "tertiary": "#351600",
+                    "secondary-fixed": "#e2e2e2",
+                    "primary-fixed-dim": "#a7c8ff",
+                    "on-primary-fixed": "#001b3c",
+                    "primary": "#001e40",
+                    "surface-container-highest": "#e5e2e1",
+                    "primary-container": "#003366",
+                    "secondary-container": "#dfe0e0",
+                    "primary-fixed": "#d5e3ff",
+                    "surface-bright": "#fcf9f8",
+                    "tertiary-fixed-dim": "#ffb786",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#799dd6",
+                    "surface": "#fcf9f8",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#dcd9d9",
+                    "on-secondary-container": "#616363",
+                    "tertiary-fixed": "#ffdcc6",
+                    "background": "#fcf9f8",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#542700",
+                    "surface-variant": "#e5e2e1",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#454747",
+                    "on-tertiary-container": "#f27b00",
+                    "surface-container": "#f0eded",
+                    "secondary": "#5d5f5f",
+                    "inverse-primary": "#a7c8ff",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-background": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#723600",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#313030",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "surface-container-low": "#f6f3f2",
+                    "on-surface-variant": "#43474f",
+                    "on-tertiary-fixed": "#311300",
+                    "surface-container-high": "#eae7e7",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "padding-button": "20px 32px",
+                    "gutter": "16px",
+                    "touch-target-min": "64px",
+                    "margin-mobile": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Lexend"],
+                    "button": ["Lexend"],
+                    "label-lg": ["Lexend"],
+                    "body-md": ["Lexend"],
+                    "body-lg": ["Lexend"],
+                    "headline-md": ["Lexend"]
+            },
+            "fontSize": {
+                    "headline-lg": ["34px", {"lineHeight": "44px", "fontWeight": "700"}],
+                    "button": ["22px", {"lineHeight": "24px", "fontWeight": "700"}],
+                    "label-lg": ["18px", {"lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "600"}],
+                    "body-md": ["20px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-lg": ["22px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+            font-size: 32px;
+        }
+        body {
+            font-family: 'Lexend', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .active-sink:active {
+            transform: translateY(4px);
+            border-bottom-width: 0px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar from JSON -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-20 bg-white border-b-2 border-blue-900">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-blue-900 active:scale-95 transition-transform duration-100" data-icon="menu">menu</button>
+<h1 class="text-3xl font-black text-blue-900 tracking-tighter">Kermes Kasa</h1>
+</div>
+<button class="material-symbols-outlined text-blue-900 active:scale-95 transition-transform duration-100" data-icon="help">help</button>
+</header>
+<!-- Fixed Sales Summary Header (Section 1) -->
+<section class="fixed top-20 w-full bg-surface-container-lowest z-40 border-b-4 border-primary p-6 shadow-sm">
+<div class="max-w-4xl mx-auto flex flex-col gap-4">
+<div class="flex justify-between items-end">
+<div class="flex flex-col">
+<span class="font-label-lg text-secondary uppercase tracking-widest text-sm">TOPLAM TUTAR</span>
+<h2 class="font-headline-lg text-primary text-5xl md:text-6xl font-black">850 ₺</h2>
+</div>
+<div class="flex gap-4">
+<!-- Undo Button -->
+<button class="bg-[#f27b00] text-white h-[touch-target-min] px-8 rounded-lg border-b-4 border-[#723600] active:translate-y-1 active:border-b-0 transition-all flex items-center gap-2 font-button">
+<span class="material-symbols-outlined" data-icon="undo">undo</span>
+                        Geri Al
+                    </button>
+<!-- Clear Button -->
+<button class="bg-error text-white h-[touch-target-min] px-8 rounded-lg border-b-4 border-[#7a1111] active:translate-y-1 active:border-b-0 transition-all flex items-center gap-2 font-button">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+                        Temizle
+                    </button>
+</div>
+</div>
+<!-- Scrolling Cart Items Area -->
+<div class="bg-surface-container h-16 rounded-lg border-2 border-outline-variant flex items-center px-4 overflow-x-auto whitespace-nowrap gap-4">
+<div class="flex items-center bg-white border-2 border-primary rounded px-3 py-1 font-bold">
+<span>Ekmek x2</span>
+<span class="ml-2 text-primary">400 ₺</span>
+</div>
+<div class="flex items-center bg-white border-2 border-primary rounded px-3 py-1 font-bold">
+<span>Ayran x1</span>
+<span class="ml-2 text-primary">50 ₺</span>
+</div>
+<div class="flex items-center bg-white border-2 border-primary rounded px-3 py-1 font-bold">
+<span>Gözleme x2</span>
+<span class="ml-2 text-primary">400 ₺</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Scrollable Content (Section 2) -->
+<main class="mt-[280px] mb-24 px-margin-mobile flex-grow">
+<div class="max-w-4xl mx-auto py-6">
+<h3 class="font-headline-md text-primary mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+                Ürün Seçimi
+            </h3>
+<div class="grid grid-cols-2 gap-6">
+<!-- Product 1 -->
+<button class="flex flex-col items-center justify-center p-6 min-h-[160px] bg-white border-4 border-blue-900 rounded-xl active:bg-blue-50 active:translate-y-2 transition-all">
+<span class="material-symbols-outlined text-4xl mb-2" data-icon="bakery_dining">bakery_dining</span>
+<span class="font-headline-md text-on-surface">Ekmek</span>
+<span class="font-black text-3xl text-primary mt-2">200 ₺</span>
+</button>
+<!-- Product 2 -->
+<button class="flex flex-col items-center justify-center p-6 min-h-[160px] bg-white border-4 border-blue-900 rounded-xl active:bg-blue-50 active:translate-y-2 transition-all">
+<span class="material-symbols-outlined text-4xl mb-2" data-icon="flatware">flatware</span>
+<span class="font-headline-md text-on-surface">Gözleme</span>
+<span class="font-black text-3xl text-primary mt-2">200 ₺</span>
+</button>
+<!-- Product 3 -->
+<button class="flex flex-col items-center justify-center p-6 min-h-[160px] bg-white border-4 border-blue-900 rounded-xl active:bg-blue-50 active:translate-y-2 transition-all">
+<span class="material-symbols-outlined text-4xl mb-2" data-icon="local_drink">local_drink</span>
+<span class="font-headline-md text-on-surface">Ayran</span>
+<span class="font-black text-3xl text-primary mt-2">50 ₺</span>
+</button>
+<!-- Product 4 -->
+<button class="flex flex-col items-center justify-center p-6 min-h-[160px] bg-white border-4 border-blue-900 rounded-xl active:bg-blue-50 active:translate-y-2 transition-all">
+<span class="material-symbols-outlined text-4xl mb-2" data-icon="coffee">coffee</span>
+<span class="font-headline-md text-on-surface">Çay</span>
+<span class="font-black text-3xl text-primary mt-2">30 ₺</span>
+</button>
+<!-- Product 5 -->
+<button class="flex flex-col items-center justify-center p-6 min-h-[160px] bg-white border-4 border-blue-900 rounded-xl active:bg-blue-50 active:translate-y-2 transition-all">
+<span class="material-symbols-outlined text-4xl mb-2" data-icon="cake">cake</span>
+<span class="font-headline-md text-on-surface">Tatlı</span>
+<span class="font-black text-3xl text-primary mt-2">150 ₺</span>
+</button>
+<!-- Product 6 -->
+<button class="flex flex-col items-center justify-center p-6 min-h-[160px] bg-white border-4 border-blue-900 rounded-xl active:bg-blue-50 active:translate-y-2 transition-all">
+<span class="material-symbols-outlined text-4xl mb-2" data-icon="restaurant">restaurant</span>
+<span class="font-headline-md text-on-surface">Köfte</span>
+<span class="font-black text-3xl text-primary mt-2">250 ₺</span>
+</button>
+</div>
+<!-- Big Action Button at bottom of grid -->
+<div class="mt-12">
+<button class="w-full bg-primary text-white font-headline-lg py-8 rounded-2xl border-b-8 border-blue-950 active:translate-y-2 active:border-b-0 flex items-center justify-center gap-4">
+<span class="material-symbols-outlined text-5xl" data-icon="payments" data-weight="fill">payments</span>
+                    SATIŞI TAMAMLA
+                </button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar from JSON -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center bg-white px-2 pb-4 h-24 border-t-4 border-blue-900">
+<a class="flex flex-col items-center justify-center text-blue-900 py-3 px-6 hover:bg-blue-100 transition-all active:translate-y-1" href="#">
+<span class="material-symbols-outlined" data-icon="inventory">inventory</span>
+<span class="font-lexend font-black text-lg">Setup</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-blue-900 text-white rounded-lg py-3 px-6 border-2 border-blue-950 transition-all active:translate-y-1" href="#">
+<span class="material-symbols-outlined" data-icon="point_of_sale" data-weight="fill">point_of_sale</span>
+<span class="font-lexend font-black text-lg">Sales</span>
+</a>
+<a class="flex flex-col items-center justify-center text-blue-900 py-3 px-6 hover:bg-blue-100 transition-all active:translate-y-1" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-lexend font-black text-lg">Summary</span>
+</a>
+</nav>
+</body></html>

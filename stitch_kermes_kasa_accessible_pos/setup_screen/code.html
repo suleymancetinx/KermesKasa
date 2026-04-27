@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kermes Kasa - Setup</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+            font-size: 32px; /* Increased for accessibility */
+        }
+        body {
+            font-family: 'Lexend', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#1c1b1b",
+                      "secondary-fixed-dim": "#c6c6c7",
+                      "surface-tint": "#3a5f94",
+                      "on-primary-fixed-variant": "#1f477b",
+                      "outline-variant": "#c3c6d1",
+                      "outline": "#737780",
+                      "tertiary": "#351600",
+                      "secondary-fixed": "#e2e2e2",
+                      "primary-fixed-dim": "#a7c8ff",
+                      "on-primary-fixed": "#001b3c",
+                      "primary": "#001e40",
+                      "surface-container-highest": "#e5e2e1",
+                      "primary-container": "#003366",
+                      "secondary-container": "#dfe0e0",
+                      "primary-fixed": "#d5e3ff",
+                      "surface-bright": "#fcf9f8",
+                      "tertiary-fixed-dim": "#ffb786",
+                      "on-error-container": "#93000a",
+                      "error-container": "#ffdad6",
+                      "on-primary-container": "#799dd6",
+                      "surface": "#fcf9f8",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-dim": "#dcd9d9",
+                      "on-secondary-container": "#616363",
+                      "tertiary-fixed": "#ffdcc6",
+                      "background": "#fcf9f8",
+                      "on-secondary": "#ffffff",
+                      "tertiary-container": "#542700",
+                      "surface-variant": "#e5e2e1",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed-variant": "#454747",
+                      "on-tertiary-container": "#f27b00",
+                      "surface-container": "#f0eded",
+                      "secondary": "#5d5f5f",
+                      "inverse-primary": "#a7c8ff",
+                      "inverse-on-surface": "#f3f0ef",
+                      "on-background": "#1c1b1b",
+                      "on-tertiary-fixed-variant": "#723600",
+                      "on-primary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "inverse-surface": "#313030",
+                      "on-secondary-fixed": "#1a1c1c",
+                      "surface-container-low": "#f6f3f2",
+                      "on-surface-variant": "#43474f",
+                      "on-tertiary-fixed": "#311300",
+                      "surface-container-high": "#eae7e7",
+                      "on-tertiary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "padding-button": "20px 32px",
+                      "gutter": "16px",
+                      "touch-target-min": "64px",
+                      "margin-mobile": "24px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Lexend"],
+                      "button": ["Lexend"],
+                      "label-lg": ["Lexend"],
+                      "body-md": ["Lexend"],
+                      "body-lg": ["Lexend"],
+                      "headline-md": ["Lexend"]
+              },
+              "fontSize": {
+                      "headline-lg": ["34px", {"lineHeight": "44px", "fontWeight": "700"}],
+                      "button": ["22px", {"lineHeight": "24px", "fontWeight": "700"}],
+                      "label-lg": ["18px", {"lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "600"}],
+                      "body-md": ["20px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-lg": ["22px", {"lineHeight": "32px", "fontWeight": "400"}],
+                      "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-20 bg-white dark:bg-slate-900 border-b-2 border-blue-900 dark:border-blue-500">
+<button class="flex items-center justify-center min-w-[64px] min-h-[64px] hover:bg-blue-50 dark:hover:bg-blue-800 active:scale-95 transition-transform duration-100 rounded-lg">
+<span class="material-symbols-outlined text-blue-900 dark:text-blue-400" data-icon="menu">menu</span>
+</button>
+<h1 class="text-3xl font-black text-blue-900 dark:text-blue-50 tracking-tighter font-lexend">Kermes Kasa</h1>
+<button class="flex items-center justify-center min-w-[64px] min-h-[64px] hover:bg-blue-50 dark:hover:bg-blue-800 active:scale-95 transition-transform duration-100 rounded-lg">
+<span class="material-symbols-outlined text-blue-900 dark:text-blue-400" data-icon="help">help</span>
+</button>
+</header>
+<!-- Main Content Area -->
+<main class="mt-24 px-6 max-w-2xl mx-auto">
+<!-- Visual Anchor / Header -->
+<section class="mb-8">
+<div class="flex items-center gap-4 mb-4">
+<div class="bg-primary p-4 rounded-xl">
+<span class="material-symbols-outlined text-white" data-icon="inventory" style="font-variation-settings: 'FILL' 1;">inventory</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Setup Your Kasa</h2>
+</div>
+<p class="font-body-lg text-body-lg text-secondary mb-6">List your items and prices below. Each item should be on its own line.</p>
+</section>
+<!-- Input Section -->
+<section class="space-y-6">
+<div>
+<label class="block font-label-lg text-label-lg text-primary mb-3 font-bold" for="product-list">
+                    Product and Price List
+                </label>
+<div class="relative">
+<textarea class="w-full p-6 text-headline-md font-headline-md border-4 border-blue-900 rounded-xl focus:ring-4 focus:ring-primary-fixed focus:border-primary-container bg-surface-container-lowest placeholder:text-outline-variant transition-all" id="product-list" placeholder="Ekmek 15
+Lavaş 20
+Su 5" rows="10"></textarea>
+</div>
+</div>
+<!-- Hint Card for Accessibility -->
+<div class="bg-secondary-container p-6 rounded-xl border-2 border-primary flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="info">info</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-secondary-container">
+<strong>Example Format:</strong> Type the name, then a space, then the price.
+                    </p>
+<p class="text-body-md font-body-md mt-1 italic text-on-secondary-container">Ayran 10</p>
+</div>
+</div>
+</section>
+<!-- Action Button -->
+<section class="mt-12 mb-10">
+<button class="w-full min-h-[80px] bg-primary text-white rounded-2xl flex items-center justify-center gap-4 border-4 border-primary-container hover:bg-primary-container active:translate-y-1 transition-all shadow-lg">
+<span class="font-button text-button uppercase tracking-wider">Save &amp; Go to Kasa</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</section>
+<!-- Summary Shortcut Section (As requested) -->
+<section class="flex justify-center items-center gap-4 pb-12 border-t-2 border-surface-container-highest pt-8">
+<p class="font-label-lg text-label-lg text-secondary">Check totals:</p>
+<button class="flex items-center justify-center min-w-[64px] min-h-[64px] bg-surface-container rounded-full border-2 border-outline hover:bg-surface-dim active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-primary" data-icon="receipt_long">receipt_long</span>
+</button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center bg-white dark:bg-slate-900 px-2 pb-4 h-24 border-t-4 border-blue-900 dark:border-blue-500">
+<!-- Setup (Active) -->
+<a class="flex flex-col items-center justify-center bg-blue-900 text-white dark:bg-blue-600 rounded-lg py-3 px-6 border-2 border-blue-950 active:translate-y-1 transition-all duration-75" href="#">
+<span class="material-symbols-outlined" data-icon="inventory" style="font-variation-settings: 'FILL' 1;">inventory</span>
+<span class="font-lexend font-black text-lg">Setup</span>
+</a>
+<!-- Sales (Inactive) -->
+<a class="flex flex-col items-center justify-center text-blue-900 dark:text-blue-200 py-3 px-6 hover:bg-blue-100 dark:hover:bg-blue-800 rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="point_of_sale">point_of_sale</span>
+<span class="font-lexend font-black text-lg">Sales</span>
+</a>
+<!-- Summary (Inactive) -->
+<a class="flex flex-col items-center justify-center text-blue-900 dark:text-blue-200 py-3 px-6 hover:bg-blue-100 dark:hover:bg-blue-800 rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-lexend font-black text-lg">Summary</span>
+</a>
+</nav>
+<!-- NavigationDrawer (Hidden by default, structure provided) -->
+<aside class="hidden fixed left-0 top-0 h-full w-80 bg-white dark:bg-slate-900 border-r-4 border-blue-900 z-[100] flex-col p-6">
+<h3 class="text-2xl font-black text-blue-900 dark:text-white mb-6 font-lexend">Kermes Kasa Menu</h3>
+<nav class="flex flex-col gap-2">
+<div class="bg-blue-900 text-white font-black m-2 rounded-lg p-6 flex items-center gap-4">
+<span class="material-symbols-outlined" data-icon="add_box">add_box</span>
+<span>Product Entry</span>
+</div>
+<div class="text-blue-900 dark:text-blue-100 m-2 p-6 border-2 border-blue-100 dark:border-slate-700 rounded-lg flex items-center gap-4 hover:bg-blue-50">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span>Transaction Log</span>
+</div>
+<div class="text-blue-900 dark:text-blue-100 m-2 p-6 border-2 border-blue-100 dark:border-slate-700 rounded-lg flex items-center gap-4 hover:bg-blue-50">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span>Settings</span>
+</div>
+<div class="text-blue-900 dark:text-blue-100 m-2 p-6 border-2 border-blue-100 dark:border-slate-700 rounded-lg flex items-center gap-4 hover:bg-blue-50">
+<span class="material-symbols-outlined" data-icon="contact_support">contact_support</span>
+<span>Help Center</span>
+</div>
+</nav>
+</aside>
+</body></html>
