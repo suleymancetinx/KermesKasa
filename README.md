@@ -38,7 +38,7 @@ Kullanıcı deneyiminin en üst seviyeye çıktığı hızlı reaksiyon ekranıd
 * Ekrana tam oturan, kenarlardan 24px güvenli boşluk (margin) bırakılmış, parmakların cihaza yanlışlıkla dokunmasını önleyen akışkan ızgara (fluid grid) yapısı.
 <br>
 
-> ![Satış Ekranı](./screen.png)
+> ![Satış Ekranı](stitch_kermes_kasa_accessible_pos/sales_screen_pos/screen.png)
 
 ---
 
@@ -48,7 +48,7 @@ Finansal hasılatın ve ürün analizinin yapıldığı, veri odaklı paneli tem
 * Tüm verileri sıfırlama işlemi (Reset All Data), yüksek opaklıklı bir "Tehlike Alanı" (Danger Zone) içinde sunularak yanlışlıkla basılmaların önüne geçer.
 <br>
 
-> ![Özet Ekranı](./screen3.png)
+> ![Özet Ekranı](stitch_kermes_kasa_accessible_pos/summary_screen/screen3.png)
 
 ## 🚀 Geliştirme Ortamı ve Kurulum
 
