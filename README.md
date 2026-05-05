@@ -50,7 +50,7 @@ Finansal hasılatın ve ürün analizinin yapıldığı, veri odaklı paneli tem
 
 > ![Özet Ekranı](stitch_kermes_kasa_accessible_pos/summary_screen/screen3.png)
 
-## 🚀 Geliştirme Ortamı ve Kurulum
+## 🚀 Geliştirme Ortamı ve Kurulum 
 
 Bu proje [`create-expo-app`](https://www.npmjs.com/package/create-expo-app) ile oluşturulmuştur. Projeyi kendi bilgisayarınızda (local) çalıştırmak için aşağıdaki adımları izleyebilirsiniz.
 
